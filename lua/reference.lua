@@ -32,7 +32,7 @@ function mul(x, y)
     return result
 end
 
-print("3*4=", mul(3,4))
+print("3 * 4 = " .. mul(3,4))
 
 
 -- comments
@@ -50,9 +50,9 @@ function f()
     glob_varaible = glob_varaible + x;
 end
 
-print("glob_varaible= ", glob_varaible) -- printed: glob_varaible= 5
+print("glob_varaible = " .. glob_varaible) -- printed: glob_varaible= 5
 f()
-print("glob_varaible= ", glob_varaible) -- printed: glob_varaible= 6
+print("glob_varaible = " .. glob_varaible) -- printed: glob_varaible= 6
 
 
 -- Tables
@@ -67,10 +67,10 @@ scores = {98, 99, 93} --Other way to init a table
 
 table.insert(scores, 100)
 
-print("scores[4]=", scores[4]) -- prints: scores[4]=100
+print("scores[4] = " .. scores[4]) -- prints: scores[4]=100
 
 scores["math"] = 78 --Other way to init a table
-print("scores[math]=", scores["math"]) -- prints: scores[math]=78
+print("scores[math] = " .. scores["math"]) -- prints: scores[math]=78
 
 
 -- Iterating over table
@@ -79,7 +79,7 @@ print("Iterating over the table")
 
 for i,v in ipairs(scores) do
 
-    print(i, v) -- i is index, v is value
+    print(i .. " : " .. v) -- i is index, v is value
 
     -- prints:1       98
     -- prints:2       99
